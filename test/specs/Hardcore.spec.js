@@ -37,7 +37,7 @@ const {expect} = require('chai');
 describe('Google cloud test', async function() {   
 
   it('Total Estimated Monthly Cost should be "USD 1,082.77"', async function() {     
-      //await GoogleCloudPage.goToPricingCalculatorPage();
+      await GoogleCloudPage.goToPricingCalculatorPage();
       await PricingCalculatorPage.fillCalculatorForm();      
       await browser.navigateTo('https://yopmail.com/en/');
       await YopmailPage.getRandomEmailAddress();

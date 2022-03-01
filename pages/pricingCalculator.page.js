@@ -197,8 +197,7 @@ class PricingCalculatorPage {
         await emailSendBtn.click();
     };
 
-    async fillCalculatorForm() {
-        await this.openPricingCalculatorPage();                    
+    async fillCalculatorForm() {                            
         await this.sendTextToInstancesField('4');
         await this.selectSeriesOfMachine();
         await this.selectTypeOfMachine();
